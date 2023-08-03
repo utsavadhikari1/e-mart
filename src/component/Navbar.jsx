@@ -5,10 +5,23 @@ const Navbar = () => {
   return (
     <div>
       <nav className="navbar navbar-expand-lg navbar-light bg-white py-3 shadow-sm">
-        <div className="container">
+        <div className="container ">
           <NavLink className="navbar-brand fw-bold fs-20" to="#">
-            NP COLLECTION
+            <div className="flex">
+              <img
+                className="logo"
+                alt="menu"
+                src="https://t4.ftcdn.net/jpg/04/71/27/39/360_F_471273924_csGsGkwKPvSRa0ppdt0KX0pzy02BYKwe.jpg"
+              />
+              NP COLLECTION
+              <p>
+                <i>
+                  <h6>Your own collection</h6>{" "}
+                </i>
+              </p>
+            </div>
           </NavLink>
+
           <button
             className="navbar-toggler"
             type="button"
@@ -59,6 +72,7 @@ const Navbar = () => {
                 </NavLink>
               </li>
             </ul>
+
             <div className="button">
               <NavLink to="/login" className="btn btn-outline-dark">
                 <i className="fa fa-sign-in me-1"></i>LogIn
@@ -68,6 +82,13 @@ const Navbar = () => {
               </NavLink>
               <NavLink to="cart" className="btn btn-outline-dark ms-2">
                 <i className="fa fa-shopping-cart me-1"></i>Cart (0)
+              </NavLink>
+              <NavLink
+                to="search"
+                className="btn btn-outline-dark ms-2"
+                type="text"
+              >
+                <i className="fa fa-search me-1"></i>Search
               </NavLink>
             </div>
           </div>

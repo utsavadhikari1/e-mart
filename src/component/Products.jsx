@@ -6,8 +6,8 @@ const Products = () => {
   const [data, setData] = useState([]);
   const [filter, setFilter] = useState(data);
   const [loading, setLoading] = useState(false);
-  const [tittle, setTitle] = useState([]);
-  const [products, setProducts] = useState([]);
+  // const [tittle, setTitle] = useState([]);
+  // const [products, setProducts] = useState([]);
 
   let componentMounted = true;
 

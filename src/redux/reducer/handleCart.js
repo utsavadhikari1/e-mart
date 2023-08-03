@@ -1,23 +1,23 @@
-import { Routes } from "react-router";
+// import { Routes } from "react-router";
 
-export const cart = [];
+// export const cart = [];
 
-const handleCart = (state = cart, action) => {
-  const product = action.payload;
+// const handleCart = (state = cart, action) => {
+//   const product = action.payload;
 
-  const handleCart = (state = cart, action) => {
-    const product = action.payload;
-    switch (action.type) {
-      case ADDITEM:
-        const exist = state.find((x) => x.id === product.id);   
-        break;
-      case DELITEM:
-        break;
-      default:
-        return state;
-    }
-  };
-  
+//   const handleCart = (state = cart, action) => {
+//     const product = action.payload;
+//     switch (action.type) {
+//       case ADDITEM:
+//         const exist = state.find((x) => x.id === product.id);
+//         break;
+//       case DELITEM:
+//         break;
+//       default:
+//         return state;
+//     }
+//   };
+
 //   Routes (action.type) {
 //     case ADDITEM:
 //       const exist =  state.find((x)=> x.id === product.id);
