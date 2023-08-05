@@ -88,7 +88,7 @@ const Navbar = () => {
                 className="btn btn-outline-dark ms-2"
                 type="text"
               >
-                <i className="fa fa-search me-1"></i>Search
+                <input className="fa fa-search me-1"></input>Search
               </NavLink>
             </div>
           </div>
