@@ -8,15 +8,18 @@ const Product = () => {
   const [product, setProduct] = useState([]);
   const [loading, setLoading] = useState(false);
 
-  useEffect(() => {
-    const getProduct = async () => {
-      setLoading(true);
-      const response = await fetch(`https://fakestoreapi.com/products/${id}`);
-      setProduct(await response.json());
-      setLoading(false);
-    };
-    getProduct();
-  }, []);
+  useEffect(
+    () => {
+      const getProduct = async () => {
+        setLoading(true);
+        const response = await fetch(`https://fakestoreapi.com/products/${id}`);
+        setProduct(await response.json());
+        setLoading(false);
+      };
+      getProduct();
+    }
+    // []
+  );
 
   const Loading = () => {
     return (

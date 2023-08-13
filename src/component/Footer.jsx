@@ -17,13 +17,6 @@ const Footer = () => {
                 </p>
               </div>
             </div>
-            {/* <div className="flex">
-              <img
-                className="logo"
-                alt="menu"
-                src="https://t4.ftcdn.net/jpg/04/71/27/39/360_F_471273924_csGsGkwKPvSRa0ppdt0KX0pzy02BYKwe.jpg"
-              />
-            </div> */}
           </h1>
         </div>
 
